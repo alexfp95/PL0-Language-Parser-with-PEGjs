@@ -1,3 +1,9 @@
-for 1 to 5 do {
-  a = 5;
+{
+  switch (c) do {
+    case a : r = 2; break;
+    case 1 : r = 3; break;
+  };
+  for 1 to 5 do {
+    a = 5;
+  };
 }
