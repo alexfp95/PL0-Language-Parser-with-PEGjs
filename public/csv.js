@@ -85,6 +85,7 @@ $(document).ready(() => {
     try {
       var result = pl0.parse($('#input').val());
       $('#output').html(JSON.stringify(result,undefined,2));
+      console.log("parse hecho");
     } catch (e) {
       $('#output').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
     }
