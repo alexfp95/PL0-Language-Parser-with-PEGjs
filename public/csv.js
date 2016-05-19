@@ -1,8 +1,9 @@
 // See http://en.wikipedia.org/wiki/Comma-separated_values
+var semantic = require ("semantic");
 (() => {
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 console.log("antes semantic");
-let semantic = require ("semantic");
+
 console.log("despues semantic");
 
 const resultTemplate = `
