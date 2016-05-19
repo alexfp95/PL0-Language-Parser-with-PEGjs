@@ -86,7 +86,7 @@ $(document).ready(() => {
     try {
             console.log("parse hecho");
 
-      var result = pl0.parse($('#original').val());
+      var result = pl0.parse(original.value);
       console.log(result);
      // original.value = JSON.stringify(result,undefined,2);
      // $('#finaltable').html(JSON.stringify(result,undefined,2));
