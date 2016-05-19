@@ -16,7 +16,6 @@ app.use(express.static(__dirname + '/lib'));
 app.use(express.static(__dirname + '/tests'));
 
 
-
 app.get('/', (request, response) => {     
   response.render ('index', { title: "Parser"} );
 });
