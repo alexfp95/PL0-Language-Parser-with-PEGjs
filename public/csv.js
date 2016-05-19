@@ -2,7 +2,7 @@
 (() => {
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 console.log("antes semantic");
-var semantic = require ("semantic");
+//var semantic = require ("semantic");
 
 console.log("despues semantic");
 
@@ -91,7 +91,7 @@ $(document).ready(() => {
             console.log("parse hecho");
 
       var result = pl0.parse($('#original').val());
-       semantic(result);
+ //      semantic(result);
      
       original.value = JSON.stringify(result,undefined,2);
      // $('#finaltable').html(JSON.stringify(result,undefined,2));
