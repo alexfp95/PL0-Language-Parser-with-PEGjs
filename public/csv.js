@@ -87,7 +87,7 @@ $(document).ready(() => {
 
       var result = pl0.parse($('#original').val());
       console.log(result);
-      original.innerHTML = "ejemplo";
+      $('#original').innerHTML = "ejemplo";
       $('#finaltable').html(JSON.stringify(result,undefined,2));
       console.log("fuera");
     } catch (e) {
