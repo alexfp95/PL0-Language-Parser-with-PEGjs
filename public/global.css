@@ -1,0 +1,57 @@
+table.center {
+
+	font-weight: bold;
+	color: #FFFAF1;
+	text-align: center;
+	margin: auto;
+	border: ridge;
+	border-color: #052600;
+	background-color: #272838;
+	
+
+}
+.output tr:nth-child(odd)    { background-color:#eee; }
+.output tr:nth-child(even)   { background-color:#6AD946; }
+.error td{ background-color: #730600; }
+
+button { background-color: #9AFF6E}
+
+body {
+	background-color: black;
+    cursor: url(http://cur.cursors-4u.net/cursors/cur-5/cur464.cur), default;
+}
+
+.example button{
+	background-color: black;
+	color: #FFFAF1;
+}
+.contenido {
+	
+		display: inline-block;
+		margin-left: 10%;
+}
+
+footer {
+	
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #222;
+}
+
+footer a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+.row {
+	display: inline-block;
+
+}
+
+a {
+	margin-left: 3%;
+}
