@@ -19,7 +19,6 @@ button { background-color: #9AFF6E}
 body {
 	background-color: black;
     cursor: url(http://cur.cursors-4u.net/cursors/cur-5/cur464.cur), default;
-    height:100%;
 }
 
 .example button{
@@ -30,6 +29,19 @@ body {
 	
 		display: inline-block;
 		margin-left: 10%;
+}
+
+.row {
+	display: inline-block;
+
+}
+
+a {
+	margin-left: 3%;
+}
+
+.output {
+	color:white;
 }
 
 footer {
@@ -47,16 +59,3 @@ footer a {
     text-decoration: none;
 }
 
-
-.row {
-	display: inline-block;
-
-}
-
-a {
-	margin-left: 3%;
-}
-
-.output {
-	color:white;
-}
