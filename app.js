@@ -17,8 +17,8 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (request, response) => {     
   response.render ('index', { title: "CSV"} );
 });
-app.get('/pl0.js', (request, response) => {     
-  response.render ('./public/pl0', { title: "pl"} );
+app.get('/pl0node.js', (request, response) => {     
+  response.render ('./lib/pl0node', { title: "pl"} );
 });
 app.get('/main.js', (request, response) => {     
   response.render ('./public/main', { title: "main"} );
