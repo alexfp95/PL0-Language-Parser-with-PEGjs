@@ -1,9 +1,15 @@
 {
+  do {
+    c = 3;
+  } while (a < 5);
+
   hash h = {hola : 5, programa : peg};
+
   switch (c) do {
     case a : r = 2; break;
     case 1 : r = 3; break;
   };
+
   for 1 to 5 do {
     a = 5;
   };
