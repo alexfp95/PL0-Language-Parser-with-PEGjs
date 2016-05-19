@@ -1,4 +1,4 @@
-module.exports = (function() {
+pl0 = (function() {
   "use strict";
 
   /*
