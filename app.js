@@ -13,6 +13,8 @@ app.use(expressLayouts);
 
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/lib'));
+app.use(express.static(__dirname + '/tests'));
+
 
 
 app.get('/', (request, response) => {     
