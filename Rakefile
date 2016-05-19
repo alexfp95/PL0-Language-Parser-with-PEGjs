@@ -2,7 +2,7 @@ task :default => :web
 
 desc "Compile pl0.pegjs browser version"
 task :web do
-  sh "pegjs -e pl0 lib/pl0.pegjs public/pl0.js"
+  sh "pegjs -e pl0 lib/pl0.pegjs lib/pl0.js"
 end
 
 desc "Compile pl0.pegjs node version"

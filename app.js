@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/', (request, response) => {     
-  response.render ('index', { title: "CSV"} );
+  response.render ('index', { title: "Parser"} );
 });
 
 app.listen(app.get('port'), () => {

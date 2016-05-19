@@ -77,26 +77,12 @@ $(document).ready(() => {
       original.value = localStorage.original;
     }
 
-    /* Request AJAX para que se calcule la tabla 
-   $("#parse").click( () => {
-        if (window.localStorage) localStorage.original = original.value;
-        $.get("/csv", /* Request AJAX para que se calcule la tabla 
-          { input: original.value },
-          fillTable,
-          'json'
-        );
-   });*/
    $('#parse').click(function() {
     try {
-            console.log("parse hecho");
-
       var result = pl0.parse($('#original').val());
- //      semantic(result);
      
-    //  original.value = JSON.stringify(result,undefined,2);
       $('#finaltable').html('<div><pre>\n' + JSON.stringify(result,undefined,2) + '\n</pre></div>');
-    //   finaltable.value = JSON.stringify(result,undefined,2);
-      console.log("fuera");
+      
     } catch (e) {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
     }
