@@ -2,7 +2,7 @@
 (() => {
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
 console.log("antes semantic");
-var semantic = require ("semantic");
+let semantic = require ("semantic");
 console.log("despues semantic");
 
 const resultTemplate = `
