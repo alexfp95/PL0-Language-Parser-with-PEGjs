@@ -86,8 +86,10 @@ $(document).ready(() => {
             console.log("parse hecho");
 
       var result = pl0.parse($('#original').val());
-      console.log(result);
+      console.log();
       $('#finaltable').html(JSON.stringify(result,undefined,2));
+      fillTable,
+          'json'
       console.log("fuera");
     } catch (e) {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
