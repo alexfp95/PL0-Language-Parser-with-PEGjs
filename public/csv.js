@@ -87,8 +87,8 @@ $(document).ready(() => {
 
       var result = pl0.parse($('#original').val());
       console.log(result);
-      original.value = result;
-      $('#finaltable').html(JSON.stringify(result,undefined,2));
+    //  original.value = result;
+      $('#original').html(JSON.stringify(result,undefined,2));
       console.log("fuera");
     } catch (e) {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
