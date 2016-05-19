@@ -18,7 +18,9 @@ const principal = require('./public/main');
 app.get('/', (request, response) => {     
   response.render ('index', { title: "CSV"} );
 });
-
+app.get('/pl0.js', (request, response) => {     
+  response.render ('./public/pl0', { title: "pl"} );
+});
 
 app.listen(app.get('port'), () => {
     console.log(`Node app is running at localhost: ${app.get('port')}` );
