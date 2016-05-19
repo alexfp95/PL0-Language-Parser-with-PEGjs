@@ -80,7 +80,7 @@ $(document).ready(() => {
    $('#parse').click(function() {
     try {
       var result = pl0.parse($('#original').val());
-     
+      semantic(result);
       $('#finaltable').html('<div><pre>\n' + JSON.stringify(result,undefined,2) + '\n</pre></div>');
       
     } catch (e) {
