@@ -19,6 +19,7 @@ button { background-color: #9AFF6E}
 body {
 	background-color: black;
     cursor: url(http://cur.cursors-4u.net/cursors/cur-5/cur464.cur), default;
+    height:5000px;
 }
 
 .example button{
