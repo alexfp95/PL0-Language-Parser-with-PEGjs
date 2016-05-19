@@ -93,7 +93,7 @@ $(document).ready(() => {
       var result = pl0.parse($('#original').val());
  //      semantic(result);
      
-      original.value = JSON.stringify(result,undefined,2);
+    //  original.value = JSON.stringify(result,undefined,2);
       $('#finaltable').html('<div><pre>\n' + JSON.stringify(result,undefined,2) + '\n</pre></div>');
     //   finaltable.value = JSON.stringify(result,undefined,2);
       console.log("fuera");
