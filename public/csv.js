@@ -68,6 +68,7 @@ const handleDragOver = (evt) => {
 
 $(document).ready(() => {
     let original = document.getElementById("original");
+    let finaltable = document.getElementById("finaltable");
     if (window.localStorage && localStorage.original) {
       original.value = localStorage.original;
     }
@@ -88,7 +89,8 @@ $(document).ready(() => {
       var result = pl0.parse($('#original').val());
       console.log(result);
       original.value = JSON.stringify(result,undefined,2);
-      $('#finaltable').html(JSON.stringify(result,undefined,2));
+     // $('#finaltable').html(JSON.stringify(result,undefined,2));
+       finaltable.value = JSON.stringify(result,undefined,2);
       console.log("fuera");
     } catch (e) {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
