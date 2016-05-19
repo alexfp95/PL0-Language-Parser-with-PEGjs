@@ -13,7 +13,6 @@ app.use(expressLayouts);
 
 app.use(express.static(__dirname + '/public'));
 
-const principal = require('./public/main');
 
 app.get('/', (request, response) => {     
   response.render ('index', { title: "CSV"} );

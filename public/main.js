@@ -1,4 +1,3 @@
-const principal = () => {
 console.log('estoy en main');
 $(document).ready(function() {
   $('#parse').click(function() {
@@ -21,7 +20,6 @@ $(document).ready(function() {
     r.readAsText(f);
   });
 
-});};
-module.exports = principal;
+});
 
 
