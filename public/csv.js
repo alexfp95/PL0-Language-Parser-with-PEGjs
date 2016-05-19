@@ -94,8 +94,8 @@ $(document).ready(() => {
  //      semantic(result);
      
       original.value = JSON.stringify(result,undefined,2);
-     // $('#finaltable').html(JSON.stringify(result,undefined,2));
-       finaltable.value = JSON.stringify(result,undefined,2);
+      $('#finaltable').html('<div><pre>\n' + JSON.stringify(result,undefined,2) + '\n</pre></div>');
+    //   finaltable.value = JSON.stringify(result,undefined,2);
       console.log("fuera");
     } catch (e) {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
