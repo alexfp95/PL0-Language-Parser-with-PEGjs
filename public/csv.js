@@ -86,9 +86,9 @@ $(document).ready(() => {
     try {
             console.log("parse hecho");
 
-      var result = pl0.parse(original.value);
+      var result = pl0.parse($('#original').val());
       console.log(result);
-     // original.value = JSON.stringify(result,undefined,2);
+      original.value = JSON.stringify(result,undefined,2);
      // $('#finaltable').html(JSON.stringify(result,undefined,2));
        finaltable.value = JSON.stringify(result,undefined,2);
       console.log("fuera");
