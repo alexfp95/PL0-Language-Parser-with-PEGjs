@@ -72,15 +72,23 @@ $(document).ready(() => {
       original.value = localStorage.original;
     }
 
-    /* Request AJAX para que se calcule la tabla */
+    /* Request AJAX para que se calcule la tabla 
    $("#parse").click( () => {
         if (window.localStorage) localStorage.original = original.value;
-        $.get("/main", /* Request AJAX para que se calcule la tabla */
+        $.get("/csv", /* Request AJAX para que se calcule la tabla 
           { input: original.value },
           fillTable,
           'json'
         );
-   });
+   });*/
+   $('#parse').click(function() {
+    try {
+      var result = pl0.parse($('#input').val());
+      $('#output').html(JSON.stringify(result,undefined,2));
+    } catch (e) {
+      $('#output').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
+    }
+  });
    /* botones para rellenar el textarea */
     $('button.example').each((index, element) => {
      $(element).click(() => {
