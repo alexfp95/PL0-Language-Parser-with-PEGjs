@@ -1,4 +1,4 @@
-const main = () => {
+const principal = () => {
 console.log('estoy en main');
 $(document).ready(function() {
   $('#parse').click(function() {
@@ -22,6 +22,6 @@ $(document).ready(function() {
   });
 
 });};
-module.exports = main;
+module.exports = principal;
 
 
