@@ -75,7 +75,7 @@ $(document).ready(() => {
     /* Request AJAX para que se calcule la tabla */
    $("#parse").click( () => {
         if (window.localStorage) localStorage.original = original.value;
-        $.get("/csv", /* Request AJAX para que se calcule la tabla */
+        $.get("/main", /* Request AJAX para que se calcule la tabla */
           { input: original.value },
           fillTable,
           'json'
