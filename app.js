@@ -20,6 +20,9 @@ app.get('/', (request, response) => {
 app.get('/pl0.js', (request, response) => {     
   response.render ('./public/pl0', { title: "pl"} );
 });
+app.get('/main.js', (request, response) => {     
+  response.render ('./public/main', { title: "main"} );
+});
 
 app.listen(app.get('port'), () => {
     console.log(`Node app is running at localhost: ${app.get('port')}` );
