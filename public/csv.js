@@ -85,8 +85,10 @@ $(document).ready(() => {
    $('#parse').click(function() {
     try {
             console.log("parse hecho");
+      var semantic = require ("semantic");
 
       var result = pl0.parse($('#original').val());
+      semantic(result);
       console.log(result);
       original.value = JSON.stringify(result,undefined,2);
      // $('#finaltable').html(JSON.stringify(result,undefined,2));
