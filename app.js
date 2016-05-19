@@ -17,12 +17,6 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (request, response) => {     
   response.render ('index', { title: "CSV"} );
 });
-app.get('/pl0node.js', (request, response) => {     
-  response.render ('./lib/pl0node', { title: "pl"} );
-});
-app.get('/main.js', (request, response) => {     
-  response.render ('./public/main', { title: "main"} );
-});
 
 app.listen(app.get('port'), () => {
     console.log(`Node app is running at localhost: ${app.get('port')}` );
