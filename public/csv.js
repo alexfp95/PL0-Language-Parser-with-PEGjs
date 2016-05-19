@@ -1,6 +1,7 @@
 // See http://en.wikipedia.org/wiki/Comma-separated_values
 (() => {
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
+var semantic = require ("semantic");
 
 const resultTemplate = `
 <div class="contenido">
@@ -87,7 +88,8 @@ $(document).ready(() => {
             console.log("parse hecho");
 
       var result = pl0.parse($('#original').val());
-      console.log(result);
+       semantic(result);
+     
       original.value = JSON.stringify(result,undefined,2);
      // $('#finaltable').html(JSON.stringify(result,undefined,2));
        finaltable.value = JSON.stringify(result,undefined,2);
