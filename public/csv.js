@@ -85,12 +85,12 @@ $(document).ready(() => {
     try {
             console.log("parse hecho");
 
-      var result = pl0.parse($('#input').val());
+      var result = pl0.parse($('#original').val());
       console.log(result);
-      $('#output').html(JSON.stringify(result,undefined,2));
+      $('#finaltable').html(JSON.stringify(result,undefined,2));
       console.log("fuera");
     } catch (e) {
-      $('#output').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
+      $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
     }
   });
    /* botones para rellenar el textarea */
