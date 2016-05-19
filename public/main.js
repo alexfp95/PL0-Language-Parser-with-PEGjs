@@ -3,7 +3,10 @@ console.log('estoy en main');
 $(document).ready(function() {
   $('#parse').click(function() {
     try {
+      var semantic = require ("semantic");
+
       var result = pl0.parse($('#input').val());
+      semantic(result);
       $('#output').html(JSON.stringify(result,undefined,2));
     } catch (e) {
       $('#output').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
