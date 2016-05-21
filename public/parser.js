@@ -1,10 +1,6 @@
 // See http://en.wikipedia.org/wiki/Comma-separated_values
 (() => {
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
-console.log("antes semantic");
-//var semantic = require ("semantic");
-
-console.log("despues semantic");
 
 const resultTemplate = `
 <div class="contenido">
@@ -73,6 +69,8 @@ const handleDragOver = (evt) => {
 $(document).ready(() => {
     let original = document.getElementById("original");
     let finaltable = document.getElementById("finaltable");
+    let tablaResultado = document.getElementById("tablaResultado");
+
     if (window.localStorage && localStorage.original) {
       original.value = localStorage.original;
     }
@@ -81,8 +79,9 @@ $(document).ready(() => {
     try {
       var result = pl0.parse($('#original').val());
       semantic(result);
-      $('#finaltable').html('<div><pre>\n' + JSON.stringify(result,undefined,2) + '\n \n \n \n \n</pre></div>');
-      
+    //  $('#finaltable').html('<div><pre>\n' + JSON.stringify(result,undefined,2) + '\n \n \n \n \n</pre></div>');
+       $('#tablaResultado').val(JSON.stringify(result,undefined,2));
+
     } catch (e) {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
     }
