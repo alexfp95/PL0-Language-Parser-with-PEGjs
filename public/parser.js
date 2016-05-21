@@ -90,6 +90,7 @@ $(document).ready(() => {
   
      $('#parseS').click(function() {
     try {
+      var sem = require("../lib/semantic.js");
       var result = pl0.parse($('#original').val());
       sem.semantic(result);
        $('#tablaResultado').val(JSON.stringify(result,undefined,2));
