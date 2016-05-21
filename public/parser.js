@@ -93,7 +93,7 @@ $(document).ready(() => {
       var result = pl0.parse($('#original').val());
       semantic(result);
       // $('#tablaResultado').val(JSON.stringify(result,undefined,2));
-      $('#finaltable').html('<div><pre>\n' + JSON.stringify(result, undefined,2) + '\n</pre></div>');
+      $('#paraS').html('<div><pre>\n' + JSON.stringify(result, undefined,2) + '\n</pre></div>');
 
     } catch (e) {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
