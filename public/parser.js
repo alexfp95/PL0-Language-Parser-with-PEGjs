@@ -81,7 +81,7 @@ $(document).ready(() => {
     try {
       var result = pl0.parse($('#original').val());
        $('#tablaResultado').val(JSON.stringify(result,undefined,2));
-      sem.semantic(result);
+      semantic.semantic(result);
 
     } catch (e) {
       $('#tablaResultado').html(JSON.stringify(e, null,4));
