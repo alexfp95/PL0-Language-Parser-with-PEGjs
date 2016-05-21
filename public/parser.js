@@ -91,7 +91,7 @@ $(document).ready(() => {
      $('#parseS').click(function() {
     try {
       var result = pl0.parse($('#original').val());
-      semantic.semantic(result);
+      sem.semantic(result);
        $('#tablaResultado').val(JSON.stringify(result,undefined,2));
 
     } catch (e) {
