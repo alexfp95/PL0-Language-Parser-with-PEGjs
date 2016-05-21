@@ -78,8 +78,18 @@ $(document).ready(() => {
    $('#parse').click(function() {
     try {
       var result = pl0.parse($('#original').val());
+       $('#tablaResultado').val(JSON.stringify(result,undefined,2));
       semantic(result);
-    //  $('#finaltable').html('<div><pre>\n' + JSON.stringify(result,undefined,2) + '\n \n \n \n \n</pre></div>');
+
+    } catch (e) {
+      $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
+    }
+  });
+  
+     $('#parseS').click(function() {
+    try {
+      var result = pl0.parse($('#original').val());
+      semantic(result);
        $('#tablaResultado').val(JSON.stringify(result,undefined,2));
 
     } catch (e) {
