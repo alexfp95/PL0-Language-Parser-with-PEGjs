@@ -81,7 +81,7 @@ $(document).ready(() => {
     try {
       var result = pl0.parse($('#original').val());
        $('#tablaResultado').val(JSON.stringify(result,undefined,2));
-      semantic.semantic(result);
+      semantic(result);
 
     } catch (e) {
       $('#tablaResultado').html(JSON.stringify(e, null,4));
@@ -90,10 +90,10 @@ $(document).ready(() => {
   
      $('#parseS').click(function() {
     try {
-      var sem = require("../lib/semantic.js");
       var result = pl0.parse($('#original').val());
-      sem.semantic(result);
-       $('#tablaResultado').val(JSON.stringify(result,undefined,2));
+      semantic(result);
+      // $('#tablaResultado').val(JSON.stringify(result,undefined,2));
+      $('#finaltable').html('<div><pre>\n' + JSON.stringify(result, undefined,2) + '\n</pre></div>');
 
     } catch (e) {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');

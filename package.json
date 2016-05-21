@@ -1,20 +1,18 @@
 {
   "name": "PL_practica2",
   "version": "1.0.0",
-  "description": "Analizador de cadenas csv usando AJAX",
+  "description": "Parser PL0",
   "main": "csv.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "firefox tests/index.html"
+    "start": "node app.js"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/alu0100821338/ajax-ecma6-modules-files-daniel-cristina"
+    "type": "git
   },
   "keywords": [
     "csv"
   ],
-  "author": "Daniel Daher Pérez, Cristina Tosco González",
+  "author": "Daniel Daher Pérez, Cristina Tosco González, Alexis Fuentes Pérez, Natalie Dajakaj",
   "license": "ISC",
   "homepage": "https://github.com/alu0100821338/ajax-ecma6-modules-files-daniel-cristina",
   "dependencies": {
