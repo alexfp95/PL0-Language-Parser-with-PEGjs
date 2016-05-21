@@ -5,7 +5,7 @@
 
   hash h = {hola : 5, programa : peg};
 
-  switch (c) do {
+  switch c + d do {
     case a : r = 2; break;
     case 1 : r = 3; break;
   };
