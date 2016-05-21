@@ -13,11 +13,11 @@ Enlace al despliegue en [Heroku](http://natalie-alexis-daniel-cristina.herokuapp
 
 ## Autores
 
-    * [Alexis Daniel Fuentes Pérez](http://alu0100816761.github.io./) 
+    [Alexis Daniel Fuentes Pérez](http://alu0100816761.github.io./) 
     
-    * [Natalie Dajakaj](http://alu0100818369.github.io./)
+    [Natalie Dajakaj](http://alu0100818369.github.io./)
     
-    * [Cristina Tosco González](http://alu0100821338.github.io./)
+    [Cristina Tosco González](http://alu0100821338.github.io./)
     
-    * [Daniel Daher Pérez](http://alu0100811933.github.io./)
+    [Daniel Daher Pérez](http://alu0100811933.github.io./)
 
