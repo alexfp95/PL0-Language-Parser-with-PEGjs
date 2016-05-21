@@ -3,7 +3,7 @@
     c = 3;
   } while (a < 5);
 
-  hash h = {hola : 5, programa : peg};
+  h = {hola : 5, programa : peg};
 
   switch c + d do {
     case a : r = 2; break;
