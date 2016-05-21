@@ -70,6 +70,8 @@ $(document).ready(() => {
     let original = document.getElementById("original");
     let finaltable = document.getElementById("finaltable");
     let tablaResultado = document.getElementById("tablaResultado");
+    
+    $('#original').val("2 + 3");
 
     if (window.localStorage && localStorage.original) {
       original.value = localStorage.original;
