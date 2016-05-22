@@ -88,7 +88,7 @@ $(document).ready(() => {
       semantic(result);
 
     } catch (e) {
-      $('#tablaResultado').html(JSON.stringify(e, null,4));
+      $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
     }
   });
 
