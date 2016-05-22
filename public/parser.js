@@ -74,7 +74,7 @@ $(document).ready(() => {
     let original = document.getElementById("original");
     let finaltable = document.getElementById("finaltable");
     let tablaResultado = document.getElementById("tablaResultado");
-    
+
     $('#original').val("2 + 3");
 
     if (window.localStorage && localStorage.original) {
@@ -91,7 +91,7 @@ $(document).ready(() => {
       $('#tablaResultado').html(JSON.stringify(e, null,4));
     }
   });
-  
+
      $('#parseS').click(function() {
     try {
       var result = pl0.parse($('#original').val());
@@ -102,7 +102,7 @@ $(document).ready(() => {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
     }
   });
-  
+
     $("#1").click( () => {
       indexButton = 0;
       $.get("/elementosBotones",
@@ -111,7 +111,7 @@ $(document).ready(() => {
         'json'
       );
    });
-   
+
    $("#2").click( () => {
       indexButton = 1;
       $.get("/elementosBotones",
@@ -120,7 +120,7 @@ $(document).ready(() => {
         'json'
       );
    });
-   
+
    $("#3").click( () => {
      indexButton = 2;
       $.get("/elementosBotones",
@@ -129,7 +129,7 @@ $(document).ready(() => {
         'json'
       );
    });
-   
+
    $("#4").click( () => {
      indexButton = 3;
       $.get("/elementosBotones",
@@ -138,14 +138,14 @@ $(document).ready(() => {
         'json'
       );
    });
-  
+
    $("#guardar").click( () => {
         $.get("/save",
           { input: original.value},
           'json'
         );
    });
-   
+
    /* botones para rellenar el textarea */
     $('button.example').each((index, element) => {
      $(element).click(() => {
