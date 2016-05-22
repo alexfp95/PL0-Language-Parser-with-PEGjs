@@ -1,7 +1,7 @@
 // See http://en.wikipedia.org/wiki/Comma-separated_values
 (() => {
 "use strict"; // Use ECMAScript 5 strict mode in browsers that support it
-
+var indexButton = 0;  // para elegir qué fichero cargamos de la base de datos
 const resultTemplate = `
 <div class="contenido">
       <table class="center" id="result">
@@ -21,6 +21,10 @@ const resultTemplate = `
 const fillTable = (data) => {
   $("#finaltable").html(_.template(resultTemplate, { rows: data.rows }));
 };
+
+const fillTextArea = (data) => {
+  $("#original").val(data[indexButton].datos);
+}
 
 /* Volcar en la textarea de entrada
  * #original el contenido del fichero fileName */
@@ -98,6 +102,50 @@ $(document).ready(() => {
       $('#finaltable').html('<div class="error"><pre>\n' + JSON.stringify(e, null,4) + '\n</pre></div>');
     }
   });
+  
+    $("#1").click( () => {
+      indexButton = 0;
+      $.get("/elementosBotones",
+        { input: 1 },
+        fillTextArea,
+        'json'
+      );
+   });
+   
+   $("#2").click( () => {
+      indexButton = 1;
+      $.get("/elementosBotones",
+        { input: 2 },
+        fillTextArea,
+        'json'
+      );
+   });
+   
+   $("#3").click( () => {
+     indexButton = 2;
+      $.get("/elementosBotones",
+        { input: 3 },
+        fillTextArea,
+        'json'
+      );
+   });
+   
+   $("#4").click( () => {
+     indexButton = 3;
+      $.get("/elementosBotones",
+        { input: 4 },
+        fillTextArea,
+        'json'
+      );
+   });
+  
+   $("#guardar").click( () => {
+        $.get("/save",
+          { input: original.value},
+          'json'
+        );
+   });
+   
    /* botones para rellenar el textarea */
     $('button.example').each((index, element) => {
      $(element).click(() => {
