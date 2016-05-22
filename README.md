@@ -1,15 +1,16 @@
 # Proyecto Final PL
 
-Escriba un analizador del lenguaje PL0 usando PEGjs así como las tecnologías vistas durante el curso: 
-ECMA6, Node.js, expressJS, MongoDB, Mongoose, SASS, etc. La salida debe ser el árbol de análisis sintáctico
-del programa de entrada
+Práctica de análisis de lenguaje PL0. En esta práctica hacemos uso de las tecnologías aprendidas a 
+lo largo del curso para implementar un analizador de lenguaje lo más completo posible, haciendo
+uso de las PEGS. Planteamos diversas mejoras respecto al lenguaje inicial. 
 
+Enlace a la descripción de la [práctica](https://campusvirtual.ull.es/1516/mod/page/view.php?id=195693)
 
-Enlace [github]() oficial.
+Enlace [github](https://github.com/ULL-ESIT-GRADOII-PL/proyecto-nataliealexis) oficial.
 
 Enlace [github](https://github.com/alu0100816761/proyecto-nataliealexis) proyecto de trabajo.
 
-Enlace al despliegue en [Cloud9](http://proyecto-pl-alu0100821338.c9users.io/).
+Enlace al despliegue en [Cloud9](http://pl-master-alu0100811933.c9users.io/).
 
 ## Autores
 
