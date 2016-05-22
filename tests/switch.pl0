@@ -1,7 +1,0 @@
-{
-  switch c + d do {
-    case a : r = 2; break;
-    case 1 : r = 3; break;
-    case true: r = 4; break;
-  };
-}
