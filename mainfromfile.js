@@ -1,4 +1,4 @@
-#!/home/ubuntu/.nvm/versions/node/v4.4.3/bin/node --harmony_destructuring
+#!/usr/local/bin/node --harmony_destructuring
 "use strict";
 const process = require('process');
 /* See gist: https://gist.github.com/branneman/8048520
