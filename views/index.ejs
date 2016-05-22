@@ -1,0 +1,112 @@
+  
+  <body>
+  <div class="contenido_total">
+    <div class="titulo_practica">
+      <h1 align="center">
+        <font color="#00ff00">Analizador de PL0 ampliado usando PEG.js</font>
+      </h1>
+      <hr>
+    </div>
+    <div class="contenido"> 
+   <img src="http://k33.kn3.net/taringa/6/1/B/1/4/0/SlendermanHack7/387.gif" alt="HTML5 Icon" >
+    </div>
+    <div class="contenido">
+      
+      <table class="center" id="input">
+         
+        <tr><th>Parser de lenguaje PL0</th></tr>
+        <tr><th>Escriba su texto o cargue uno por defecto </th></tr>
+        <tr>
+          <th>
+            <textarea class = "drop_zone" autofocus="" cols = "90" rows = "15" id="original"></textarea>
+          </th>
+          <th>
+            <button type="button" id="parse"> Árbol <br> análisis <br>
+            sintáctico</button>
+          </th>
+          <th>
+            <button type="button" id="parseS"> AAS + <br> Symbol table </button>
+          </th>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <th>
+            <div class="example">
+              Entradas:
+              <button class ="example" type="button">funciones</button>
+              <button class ="example" type="button">dowhile</button>
+              <button class ="example" type="button">for</button>
+              <button class ="example" type="button">hash</button>
+              <button class ="example" type="button">switch</button>   
+              <button class ="example" type="button">dobledeclaracion</button>  
+              <button class ="example" type="button">dobledeclaracion2</button>
+            </div>
+          </th>
+        </tr>
+           <tr>
+		  
+          <th>
+            <div class="botones_bd">
+              Click para cargar registros de la base de datos:
+              <button id = "1" class ="botones_bd" type="button">0</button>
+              <button id = "2" class ="botones_bd" type="button">1</button>
+              <button id = "3" class ="botones_bd" type="button">2</button>
+			        <button id = "4" class ="botones_bd" type="button">3</button>
+            </div>
+         </th>
+         </tr>
+        <tr>
+		      <th>
+            <button id ="guardar" type="button">Guardar entrada actual</button> 
+          </th>
+        </tr>
+        <tr>
+          <th>
+              Cargar archivo:
+              <input type="file" class="inputfile" />
+          </th>
+        </tr>
+        
+      </table>
+
+      <div class="output" id="finaltable">
+         <table>
+           <th>
+            <textarea id = "tablaResultado" autofocus="" cols = "90" rows = "15"></textarea>
+            <br><br><br><br><br><br>
+          </th>
+          </table>
+      </div>
+      <div id="error"></div>
+       <br><br><br><br><br><br>
+    </div>
+    
+    
+  </div>
+
+
+ <footer>
+
+      <div class="container">
+        
+            <a href="https://github.com/ULL-ESIT-GRADOII-PL/proyecto-nataliealexis" 
+            target="_blank"><img src="http://gilcreque.com/assets/img/github.png"
+            border="0"></a>
+         
+            
+        
+            <a href="http://alu0100816761.github.io/">Alexis Fuentes</a>
+       
+            <a href="http://alu0100818369.github.io/">Natalie Dajakaj</a>
+          
+            <a href="http://alu0100821338.github.io/">Cristina Tosco</a>
+        
+            <a href="http://alu0100811933.github.io/">Daniel Daher</a>
+          
+        </div>
+      </div>
+  </footer>
+  <script src="semantic.js"></script>
+  <script src="pl0.js"></script>
+  </body>
